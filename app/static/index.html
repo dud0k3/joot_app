@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>JOOT VPN</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="hero">
+      <div class="brand-row">
+        <div class="logo">J</div>
+        <div>
+          <h1>JOOT VPN</h1>
+          <p id="provider">3 устройства</p>
+        </div>
+      </div>
+      <div class="status-card" id="statusCard">
+        <span class="muted">Статус</span>
+        <strong id="status">Загрузка…</strong>
+      </div>
+    </section>
+
+    <section class="actions">
+      <button id="connectBtn" class="primary">Подключить VPN</button>
+      <button id="refreshBtn">Обновить ссылку</button>
+      <button id="copyBtn">Скопировать ссылку</button>
+    </section>
+
+    <section class="panel">
+      <h2>Подписка</h2>
+      <div class="grid">
+        <div><span>Устройства</span><b id="devices">—</b></div>
+        <div><span>Осталось</span><b id="daysLeft">—</b></div>
+      </div>
+      <label>Ссылка</label>
+      <textarea id="accessUrl" readonly placeholder="Ссылка появится после подключения"></textarea>
+      <p class="hint">Скопируйте ссылку и добавьте её как подписку в Happ/Hiddify.</p>
+    </section>
+
+    <section class="panel small">
+      <h2>Инструкция</h2>
+      <ol>
+        <li>Нажмите «Подключить VPN».</li>
+        <li>Скопируйте ссылку подписки.</li>
+        <li>Откройте Happ или Hiddify.</li>
+        <li>Добавьте подписку из буфера обмена.</li>
+      </ol>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
